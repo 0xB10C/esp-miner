@@ -9,30 +9,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - board: NERDQAXEPLUS
-            upload_www: true
-            label: NerdQAxe+
-          - board: NERDOCTAXEPLUS
-            upload_www: false
-            label: NerdOCTAXE+
           - board: NERDQAXEPLUS2
             upload_www: false
             label: NerdQAxe++
-          - board: NERDAXE
-            upload_www: false
-            label: NerdAxe
-          - board: NERDOCTAXEGAMMA
-            upload_www: false
-            label: NerdOCTAXE-Gamma
-          - board: NERDAXEGAMMA
-            upload_www: false
-            label: NerdAxeGamma
-          - board: NERDHAXEGAMMA
-            label: NerdHaxe-Gamma
-            upload_www: false
-          - board: NERDEKO
-            upload_www: false
-            label: NerdEKO
 
     steps:
     - name: Checkout repository
