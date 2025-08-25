@@ -10,26 +10,12 @@ jobs:
     strategy:
       matrix:
         include:
-          - board: NERDQAXEPLUS
-            label: NerdQAxe+
-          - board: NERDOCTAXEPLUS
-            label: NerdOCTAXE+
           - board: NERDQAXEPLUS2
             label: NerdQAxe++
-          - board: NERDAXE
-            label: NerdAxe
-          - board: NERDOCTAXEGAMMA
-            label: NerdOCTAXE-Gamma
-          - board: NERDAXEGAMMA
-            label: NerdAxeGamma
-          - board: NERDHAXEGAMMA
-            label: NerdHaxe-Gamma
-          - board: NERDEKO
-            label: NerdEKO
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v5
 
     - name: Set Target for ${{ matrix.label }}
       run: |
