@@ -25,8 +25,8 @@ static mining_notify current_job;
 static char *extranonce_str = NULL;
 static int extranonce_2_len = 0;
 
-static uint32_t stratum_difficulty = 8192;
-static uint32_t active_stratum_difficulty = 8192;
+static uint32_t stratum_difficulty = 1;
+static uint32_t active_stratum_difficulty = 1;
 static uint32_t version_mask = 0;
 
 #define min(a, b) ((a < b) ? (a) : (b))
